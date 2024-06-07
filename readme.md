@@ -76,7 +76,7 @@ sudo apt install graphviz
 ```
 [Homebrew](https://brew.sh/)<br>
 ```bash
-sudo apt install graphviz
+brew install graphviz
 ```
 
 ### 3.2. 配置python包环境
