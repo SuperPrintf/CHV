@@ -6,7 +6,7 @@
 
 ## 1. 简介
 ### 1.1. 功能
-将python中的类输出为以图像的形式，以展示各类的结构<br>
+将python中的类结构以图像的形式进行拆解展示<br>
 
 `python_file.py`提供的一个示例:<br>
 ```python
@@ -32,21 +32,20 @@ class D(B, C):
 ```
 <div align="center">
 
-![结构图](img/out.png)
+![结构图](output/class_hierarchy.png)
 *图1. 生成的结构图*<br>
 </div>
 
 ### 1.2. 实现方案
 * 使用python作为编程语言
 * 通过AST进行源代码提取以实现程序解析的目的
-* 通过以DOT语法对获取到的类结构进行描述
+* 通过DOT语法对获取到的类结构进行描述
 * 通过Graphviz将生成的结构转换为png图片(输出清晰度可调)
 
 ## 2. 文件夹内容
 *文件夹内包含一组输出，以及相应的测试代码*<br>
 * `main.py`: 主程序，包含默认的示例设置
 * `python_file.py`: 测试文件，包含若干存在继承关系的类
-* `img`: 存放图片
 * `output`: 输出文件
     * `class_hierarchy.dot`: 根据类结构生成的dot描述文本
     * `class_hierarchy.png`: 通过描述文本输出的png图片
