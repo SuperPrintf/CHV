@@ -1,14 +1,14 @@
-<center>
+<div align="center">
 
 # 类层次结构可视化
 *CHV(Class Hierarchy Visualizer)*
-</center>
+</div>
 
 ## 1. 简介
 ### 1.1. 功能
-将python中的类输出为以图像形式展示的结构<br>
+将python中的类输出为以图像的形式，以展示各类的结构<br>
 
-一个py文件示例:<br>
+`python_file.py`提供的一个示例:<br>
 ```python
 class A:
     var1 = 10
@@ -30,17 +30,17 @@ class D(B, C):
     def method5(self):
         pass
 ```
-<center>
+<div align="center">
 
 ![结构图](img/out.png)
 *图1. 生成的结构图*<br>
-</center>
+</div>
 
 ### 1.2. 实现方案
-* 通过python作为编程语言
+* 使用python作为编程语言
 * 通过AST进行源代码提取以实现程序解析的目的
-* 通过以DOT语法进行结构的输出
-* 通过Graphviz将结构转换为png图片(输出清晰度可调)
+* 通过以DOT语法对获取到的类结构进行描述
+* 通过Graphviz将生成的结构转换为png图片(输出清晰度可调)
 
 ## 2. 文件夹内容
 *文件夹内包含一组输出，以及相应的测试代码*<br>
@@ -56,10 +56,10 @@ class D(B, C):
 此处只做简要叙述，详情参见官方说明<i>[Graphviz-Download](https://www.graphviz.org/download/)</i><br>
 
 #### Windows
-[graphviz-11.0.0 (32-bit) ZIP](https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/11.0.0/windows_10_msbuild_Release_graphviz-11.0.0-win32.zip)
-[graphviz-11.0.0 (64-bit) ZIP](https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/11.0.0/windows_10_cmake_Release_Graphviz-11.0.0-win64.zip)
-[graphviz-11.0.0 (32-bit) EXE](https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/11.0.0/windows_10_cmake_Release_graphviz-install-11.0.0-win32.exe)
-[graphviz-11.0.0 (64-bit) EXE](https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/11.0.0/windows_10_cmake_Release_graphviz-install-11.0.0-win64.exe)
+[graphviz-11.0.0 (32-bit) ZIP](https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/11.0.0/windows_10_msbuild_Release_graphviz-11.0.0-win32.zip)<br>
+[graphviz-11.0.0 (64-bit) ZIP](https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/11.0.0/windows_10_cmake_Release_Graphviz-11.0.0-win64.zip)<br>
+[graphviz-11.0.0 (32-bit) EXE](https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/11.0.0/windows_10_cmake_Release_graphviz-install-11.0.0-win32.exe)<br>
+[graphviz-11.0.0 (64-bit) EXE](https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/11.0.0/windows_10_cmake_Release_graphviz-install-11.0.0-win64.exe)<br>
 
 #### Linux
 Ubuntu packages/Debian packages<br>
@@ -118,7 +118,7 @@ Image(filename=visualizer._png_filename)
 
 ## 附录
 
-**CHV类类方法**<br>
+**CHV类的方法**<br>
 
 * `__init__`: 初始化类的实例，接受文件路径、输出目录、输出文件名和图片清晰度（DPI）作为参数。
 * `set_file_path`: 设置并验证文件路径。
