@@ -1,0 +1,10 @@
+digraph G {
+    "A" [shape=record, label="{A|{Methods|{method1|method2}|Variables|{var1}}}"];
+    "B" [shape=record, label="{B|{Methods|{method3}}}"];
+    "C" [shape=record, label="{C|{Methods|{method4}}}"];
+    "D" [shape=record, label="{D|{Methods|{method5}}}"];
+    "A" -> "B";
+    "A" -> "C";
+    "B" -> "D";
+    "C" -> "D";
+}
